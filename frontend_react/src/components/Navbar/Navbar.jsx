@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 import "./Navbar.scss";
 import { images } from "../../constants";
 
+const navbarLinks = ["home", "about", "work", "skills", "contact"];
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
-  const navbarLinks = ["home", "about", "work", "skills", "contact"];
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
