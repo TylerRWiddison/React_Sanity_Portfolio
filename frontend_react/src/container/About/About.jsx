@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { motion } from "framer-motion";
 
-import { images } from "../../constants";
+import { AppWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./About.scss";
@@ -50,4 +50,5 @@ const About = () => {
   );
 };
 
-export default About;
+//AppWrap passes the about section as <Component id='about' />
+export default AppWrap(About, 'about');
