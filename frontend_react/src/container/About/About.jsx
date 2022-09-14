@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { motion } from "framer-motion";
 
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./About.scss";
@@ -51,4 +51,5 @@ const About = () => {
 };
 
 //AppWrap passes the about section as <Component id='about' />
-export default AppWrap(About, 'about');
+//MotionWrap Provides motion everytime the section is moved into view
+export default AppWrap(MotionWrap(About, 'app_about'), 'about', 'app__whitebg');
