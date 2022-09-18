@@ -68,7 +68,8 @@ const Work = () => {
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
+                whileInView={{opacity: [0, 1]}}
+                // whileHover={{ opacity: [.5, 1] }}
                 transition={{
                   duration: 0.25,
                   ease: "easeInOut",
