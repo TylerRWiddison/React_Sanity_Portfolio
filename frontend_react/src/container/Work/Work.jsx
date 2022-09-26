@@ -44,7 +44,7 @@ const Work = () => {
         <span> my projects </span>
       </h2>
       <div className="app__works-filter app__flex">
-        {["React", "SPA", "CMS", "Full Stack", 'All'].map((item, index) => (
+        {["React", "Sanity IO", 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

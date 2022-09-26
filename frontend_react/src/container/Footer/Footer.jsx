@@ -40,7 +40,7 @@ const Footer = () => {
 
   return (
     <Fragment>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Feel free to contact me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card">
@@ -49,10 +49,10 @@ const Footer = () => {
             tyler.widdisondev@gmail.com
           </a>
         </div>
-        <div className="app__footer-card">
+        {/*<div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
           <a href="tel: +1 (123) 456-7890">tel: +1 (123) 456-7890</a>
-        </div>
+  </div>*/}
       </div>
 
       {!isFormSubmitted ? 
@@ -103,5 +103,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, "app__footer"),
   "contact",
-  "app__whitebg"
+  "app__primary"
 );
