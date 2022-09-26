@@ -5,7 +5,6 @@ const navbarLinks = [
   "about",
   "work",
   "skills",
-  "testimonials",
   "contact",
 ];
 
